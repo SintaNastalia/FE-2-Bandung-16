@@ -26,8 +26,18 @@ function addpemesanan() {
     isSending = true;
     fetch(`be-2-bandung-16-production-b5ba.up.railway.app/pemesanan`, {
         method: "POST",
+        headers: {
+            'Content-Type': 'application/json',
+        },
         body: JSON.stringify({
-            body: formData
+            name: aname.value,
+            email: aemail.value,
+            checkin: acheckin.value,
+            checkout: acheckout.value,
+            adults: aadults.value,
+            child: achild.value,
+            room: aroom.value,
+            type_room: atype_room.value
         }),
     })
     .then(function (response) {
