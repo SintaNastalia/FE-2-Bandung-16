@@ -43,7 +43,7 @@ function addpemesanan() {
     .then(function (response) {
         return response.json();
     })
-    .then(function (data, body) {
+    .then(function (data) {
         console.log(data)      
         const list = document.getElementById("berhasil2"); 
         list.innerHTML += `
