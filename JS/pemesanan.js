@@ -27,7 +27,7 @@ function addpemesanan() {
     fetch(`be-2-bandung-16-production-b5ba.up.railway.app/pemesanan`, {
         method: "POST",
         headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'multipart/form-data',
         },
         body: JSON.stringify({
             name: aname.value,
