@@ -15,7 +15,7 @@ function contact() {
     formData.append('mobile', amobile.value);
     formData.append('message', amessage.value);
 
-    fetch(`https://be-2-bandung-16-production-b5ba.up.railway.app//contact`, {
+    fetch(`https://be-2-bandung-16-production-b5ba.up.railway.app/contact`, {
         method: "POST",
         headers: {
             'Content-Type': 'application/json',
